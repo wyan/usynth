@@ -1,7 +1,7 @@
-CC = avr-gcc -mmcu=atmega88 -Wall 
-CCFLAGS = -O3 -fdata-sections -ffunction-sections -DNDEBUG -std=c99 -I/usr/local/avr/include/ 
-LDFLAGS = -lm -L/usr/local/avr/lib/avr4/  -Wl,--gc-sections
-AVRDUDE = avrdude -p m88 -c usbasp -e
+CC = avr-gcc -mmcu=atmega328p -Wall
+CCFLAGS = -O3 -fdata-sections -ffunction-sections -DNDEBUG -std=c99 -I/usr/local/Cellar/avr-gcc/8.3.0/avr/include
+LDFLAGS = -lm -L/usr/local/Cellar/avr-gcc/8.3.0/avr/lib/avr4/  -Wl,--gc-sections
+AVRDUDE = avrdude -p m328p -c arduino -e
 
 APP = usynth
 
